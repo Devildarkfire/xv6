@@ -122,6 +122,7 @@ int             wait(void);
 void            wakeup(void*);
 void            yield(void);
 int             hello(void); /////////////////myeditd
+int             helloYou(char*); /////////////////myeditd
 
 // swtch.S
 void            swtch(struct context**, struct context*);
