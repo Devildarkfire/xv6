@@ -317,7 +317,7 @@ wait(void)
 int
 hello(void)
 {
-  printf(stdout, "hello\n");
+  printf(1, "hello\n");
   
   return 0;
 }
