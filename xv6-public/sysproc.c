@@ -15,9 +15,14 @@ sys_hello(void)
 }
 
 int
-sys_helloYou(char* input)
+sys_helloYou(void)
 {
-  return helloYou(input);
+  char *path;
+
+  if(argstr(0, &path) < 0)	  
+    return -1;
+	
+  return helloYou(path);
 }
 /////////////////myedit
 
