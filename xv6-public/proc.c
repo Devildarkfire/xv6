@@ -323,7 +323,7 @@ hello(void)
 }
 
 int
-helloYou(const char* input)
+helloYou(char* input)
 {
   cprintf(input);
   

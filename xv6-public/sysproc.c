@@ -15,7 +15,7 @@ sys_hello(void)
 }
 
 int
-sys_helloYou(const char* input)
+sys_helloYou(char* input)
 {
   return helloYou(input);
 }
