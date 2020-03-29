@@ -325,7 +325,7 @@ hello(void)
 int
 helloYou(char* input)
 {
-  cprintf("%s\n", input);
+  cprintf(input);
   
   return 0;
 }

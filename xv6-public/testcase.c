@@ -10,9 +10,7 @@ int main(void)
   
   hello();
   
-  char* name = "xv6 lab\n";
-  
-  helloYou(name);
+  helloYou("xv6 lab\n");
   
   exit();
 }
