@@ -7,6 +7,14 @@
 #include "mmu.h"
 #include "proc.h"
 
+/////////////////myedit
+int
+sys_hello(void)
+{
+  return hello();
+}
+/////////////////myedit
+
 int
 sys_fork(void)
 {
