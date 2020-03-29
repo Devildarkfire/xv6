@@ -7,6 +7,8 @@
 #include "proc.h"
 #include "spinlock.h"
 
+#include <stdio.h> /////////////////myedit
+
 struct {
   struct spinlock lock;
   struct proc proc[NPROC];
