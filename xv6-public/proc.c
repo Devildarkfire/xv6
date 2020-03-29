@@ -317,9 +317,9 @@ wait(void)
 int
 hello(void)
 {
-	printf("hello\n");
-	
-	return 0;
+  printf("hello\n");
+  
+  return 0;
 }
 /////////////////myedit
 
