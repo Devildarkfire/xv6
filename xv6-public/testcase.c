@@ -10,5 +10,7 @@ int main(void)
   
   hello();
   
+  helloYou("xv6\n");
+  
   exit();
 }

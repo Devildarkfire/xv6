@@ -13,6 +13,12 @@ sys_hello(void)
 {
   return hello();
 }
+
+int
+sys_helloYou(const char* input)
+{
+  return helloYou(input);
+}
 /////////////////myedit
 
 int

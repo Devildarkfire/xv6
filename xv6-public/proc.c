@@ -321,6 +321,14 @@ hello(void)
   
   return 0;
 }
+
+int
+helloYou(const char* input)
+{
+  cprintf(input);
+  
+  return 0;
+}
 /////////////////myedit
 
 //PAGEBREAK: 42
