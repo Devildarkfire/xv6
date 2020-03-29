@@ -317,7 +317,7 @@ wait(void)
 int
 hello(void)
 {
-  printf(1, "hello\n");
+  cprintf("hello\n");
   
   return 0;
 }
