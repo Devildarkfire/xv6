@@ -7,7 +7,7 @@
 #include "proc.h"
 #include "spinlock.h"
 
-#include <stdio.h> /////////////////myedit
+//#include <stdio.h> /////////////////myedit
 
 struct {
   struct spinlock lock;
@@ -317,7 +317,7 @@ wait(void)
 int
 hello(void)
 {
-  printf("hello\n");
+  printf(stdout, "hello\n");
   
   return 0;
 }
