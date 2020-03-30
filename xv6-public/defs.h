@@ -122,7 +122,7 @@ int             wait(void);
 void            wakeup(void*);
 void            yield(void);
 int             hello(void); /////////////////myeditd
-int             helloYou(void); /////////////////myeditd
+int             helloYou(char*); /////////////////myeditd
 int             getNumProc(void); /////////////////myedit
 int             getMaxPid(void); /////////////////myedit
 int             getProcInfo(void); /////////////////myedit struct processInfo*  

@@ -324,16 +324,9 @@ hello(void)
 }
 
 int
-helloYou(void)
+helloYou(char *input)
 {
-	
-  char *name;
-
-  if(argstr(0, &name) < 0){  
-    return -1;
-  }
-  
-  cprintf(name);
+  cprintf(input);
   
   return 0;
 }
