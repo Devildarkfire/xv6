@@ -7,6 +7,8 @@
 #include "mmu.h"
 #include "proc.h"
 
+#include "processInfo.h" /////////////////myedit
+
 /////////////////myedit
 int
 sys_hello(void)
