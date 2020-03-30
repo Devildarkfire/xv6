@@ -17,12 +17,13 @@ sys_hello(void)
 int
 sys_helloYou(void)
 {
-  char *path;
+  char *name;
 
-  if(argstr(0, &path) < 0)	  
+  if(argstr(0, &name) < 0){  
     return -1;
+  }
 	
-  return helloYou(path);
+  return helloYou(name);
 }
 
 int
@@ -35,6 +36,12 @@ int
 sys_getMaxPid(void)
 {	
   return getMaxPid();
+}
+
+int
+sys_getProcInfo(void)
+{
+  return getProcInfo();
 }
 /////////////////myedit
 

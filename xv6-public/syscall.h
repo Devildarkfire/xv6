@@ -24,3 +24,4 @@
 #define SYS_helloYou  23 /////////////////myedit
 #define SYS_getNumProc  24 /////////////////myedit
 #define SYS_getMaxPid  25 /////////////////myedit
+#define SYS_getProcInfo  25 /////////////////myedit

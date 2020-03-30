@@ -8,6 +8,7 @@
 #include "spinlock.h"
 
 //#include <stdio.h> /////////////////myedit
+#include "processInfo.h" /////////////////myedit
 
 struct {
   struct spinlock lock;
@@ -336,11 +337,15 @@ getNumProc(void)
   struct proc *p;
   int num_proc = 0;
 
+  acquire(&ptable.lock);
+
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
     if(p->state != UNUSED){
 		num_proc++;
 	}
   }
+  
+  release(&ptable.lock);
   
   return num_proc;
 }
@@ -351,6 +356,8 @@ getMaxPid(void)
   struct proc *p;
   int max_pid = 0;
   int pid;
+
+  acquire(&ptable.lock);
 
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){	  
     if(p->state != UNUSED ){	
@@ -363,7 +370,39 @@ getMaxPid(void)
 	}	
   }
   
+  release(&ptable.lock);
+	
   return max_pid;
+}
+
+int
+getProcInfo(void){
+
+  struct proc *p;
+  int pid;
+  struct processInfo* pinfo;
+
+  if(argint(0, &pid) < 0 || argptr(1, (void*)&pinfo, sizeof(*pinfo)) < 0){
+	  return -1;
+  }
+  
+  acquire(&ptable.lock);
+  
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+	  
+    if(p->pid == pid){
+      pinfo->pid = pid;
+	  pinfo->psize = p->sz;
+	  pinfo->numberContextSwitches = p->numberContextSwitches;
+	  
+      release(&ptable.lock);
+      return 0;
+    }
+  }
+  
+  release(&ptable.lock);
+  
+  return -1;
 }
 /////////////////myedit
 
