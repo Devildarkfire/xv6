@@ -24,6 +24,18 @@ sys_helloYou(void)
 	
   return helloYou(path);
 }
+
+int
+sys_getNumProc(void)
+{	
+  return getNumProc(path);
+}
+
+int
+sys_getMaxPid(void)
+{	
+  return getNumProc(path);
+}
 /////////////////myedit
 
 int

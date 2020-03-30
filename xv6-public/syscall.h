@@ -22,3 +22,5 @@
 #define SYS_close  21
 #define SYS_hello  22 /////////////////myedit
 #define SYS_helloYou  23 /////////////////myedit
+#define SYS_getNumProc  24 /////////////////myedit
+#define SYS_getMaxPid  25 /////////////////myedit

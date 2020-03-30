@@ -123,6 +123,8 @@ void            wakeup(void*);
 void            yield(void);
 int             hello(void); /////////////////myeditd
 int             helloYou(char*); /////////////////myeditd
+int             getNumProc(void); /////////////////myedit
+int             getMaxPid(void); /////////////////myedit
 
 // swtch.S
 void            swtch(struct context**, struct context*);

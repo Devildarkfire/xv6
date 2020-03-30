@@ -329,6 +329,42 @@ helloYou(char *input)
   
   return 0;
 }
+
+int
+getNumProc(void)
+{	
+  struct proc *p;
+  int num_proc = 0;
+
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+    if(p->state != UNUSED){
+		num_proc++;
+	}
+  }
+  
+  return num_pid;
+}
+
+int
+getMaxPid(void)
+{	
+  struct proc *p;
+  int max_pid = 0;
+  int pid;
+
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){	  
+    if(p->state != UNUSED ){	
+	
+		pid = p->pid;		
+		
+		if(pid > max_pid){
+		  max_pid = pid;
+		}		
+	}	
+  }
+  
+  return max_pid;
+}
 /////////////////myedit
 
 //PAGEBREAK: 42

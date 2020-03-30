@@ -31,3 +31,5 @@ SYSCALL(sleep)
 SYSCALL(uptime)
 SYSCALL(hello) /////////////////myedit
 SYSCALL(helloYou) /////////////////myedit
+SYSCALL(getNumProc) /////////////////myedit
+SYSCALL(getMaxPid) /////////////////myedit

@@ -25,6 +25,8 @@ int sleep(int);
 int uptime(void);
 int hello(void); /////////////////myedit
 int helloYou(char*); /////////////////myedit
+int getNumProc(void); /////////////////myedit
+int getMaxPid(void); /////////////////myedit
 
 // ulib.c
 int stat(const char*, struct stat*);

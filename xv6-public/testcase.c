@@ -12,5 +12,9 @@ int main(void)
   
   helloYou("xv6 lab\n");
   
+  printf(1, "%d\n", getNumProc());
+  
+  printf(1, "%d\n", getMaxPid());
+  
   exit();
 }
