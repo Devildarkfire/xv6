@@ -16,7 +16,7 @@ int main(void)
   
   printf(1, "%d\n", getMaxPid());
   
-  processInfo* pinfo;
+  struct processInfo* pinfo;
   
   getProcInfo(1, pinfo);
 	  

@@ -29,7 +29,7 @@ int hello(void); /////////////////myedit
 int helloYou(char*); /////////////////myedit
 int getNumProc(void); /////////////////myedit
 int getMaxPid(void); /////////////////myedit
-int getProcInfo(void); /////////////////myedit
+int getProcInfo(int, struct processInfo*); /////////////////myedit
 
 // ulib.c
 int stat(const char*, struct stat*);
