@@ -132,8 +132,8 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_hello]   sys_hello, /////////////////myedit
 [SYS_helloYou]   sys_helloYou, /////////////////myedit
-[SYS_hello]   sys_getNumProc, /////////////////myedit
-[SYS_helloYou]   sys_getMaxPid, /////////////////myedit
+[SYS_getNumProc]   sys_getNumProc, /////////////////myedit
+[SYS_getMaxPid]   sys_getMaxPid, /////////////////myedit
 };
 
 void
