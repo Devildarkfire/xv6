@@ -30,7 +30,7 @@ int helloYou(char*); /////////////////myedit
 int getNumProc(void); /////////////////myedit
 int getMaxPid(void); /////////////////myedit
 int getProcInfo(int, struct processInfo*); /////////////////myedit
-int setprio(void); /////////////////myedit
+int setprio(int); /////////////////myedit
 int getprio(void); /////////////////myedit
 
 // ulib.c
