@@ -342,7 +342,7 @@ getNumProc(void)
 	}
   }
   
-  return num_pid;
+  return num_proc;
 }
 
 int
