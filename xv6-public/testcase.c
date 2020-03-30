@@ -18,7 +18,7 @@ int main(void)
   
   struct processInfo pinfo;
   
-  getProcInfo(1, $pinfo);
+  getProcInfo(1, &pinfo);
 	  
   printf(1, "pid:%d, psize:%d, numberContextSwitches:%d\n", pinfo.pid, pinfo.psize, pinfo.numberContextSwitches);
   
