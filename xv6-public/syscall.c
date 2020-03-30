@@ -105,8 +105,8 @@ extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_hello(void); /////////////////myedit
 extern int sys_helloYou(void); /////////////////myedit
-extern int getNumProc(void); /////////////////myedit
-extern int getMaxPid(void); /////////////////myedit
+extern int sys_getNumProc(void); /////////////////myedit
+extern int sys_getMaxPid(void); /////////////////myedit
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
