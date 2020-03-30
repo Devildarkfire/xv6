@@ -22,5 +22,11 @@ int main(void)
 	  
   printf(1, "pid:%d, psize:%d, numberContextSwitches:%d\n", pinfo.pid, pinfo.psize, pinfo.numberContextSwitches);
   
+  printf(1, "prio:%d\n", getprio());
+  
+  setprio(7);
+  
+  printf(1, "prio:%d\n", getprio());
+  
   exit();
 }
