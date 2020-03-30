@@ -376,16 +376,10 @@ getMaxPid(void)
 }
 
 int
-getProcInfo(void){
+getProcInfo(int pid, struct processInfo* pinfo){
 
   struct proc *p;
-  int pid;
-  struct processInfo* pinfo;
-
-  if(argint(0, &pid) < 0 || argptr(1, (void*)&pinfo, sizeof(*pinfo)) < 0){
-	  return -1;
-  }
-  
+ 
   acquire(&ptable.lock);
   
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){

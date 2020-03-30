@@ -125,7 +125,7 @@ int             hello(void); /////////////////myeditd
 int             helloYou(char*); /////////////////myeditd
 int             getNumProc(void); /////////////////myedit
 int             getMaxPid(void); /////////////////myedit
-int             getProcInfo(void); /////////////////myedit struct processInfo*  
+int             getProcInfo(int, struct processInfo*); /////////////////myedit 
 
 // swtch.S
 void            swtch(struct context**, struct context*);

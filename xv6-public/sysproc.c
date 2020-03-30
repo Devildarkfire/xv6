@@ -41,7 +41,14 @@ sys_getMaxPid(void)
 int
 sys_getProcInfo(void)
 {
-  return getProcInfo();
+  int pid;
+  struct processInfo* pinfo;
+
+  if(argint(0, &pid) < 0 || argptr(1, (void*)&pinfo, sizeof(*pinfo)) < 0){
+	  return -1;
+  }
+  
+  return getProcInfo(pid, pinfo);
 }
 /////////////////myedit
 
