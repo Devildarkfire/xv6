@@ -28,13 +28,13 @@ sys_helloYou(void)
 int
 sys_getNumProc(void)
 {	
-  return getNumProc(path);
+  return getNumProc();
 }
 
 int
 sys_getMaxPid(void)
 {	
-  return getNumProc(path);
+  return getMaxPid();
 }
 /////////////////myedit
 
