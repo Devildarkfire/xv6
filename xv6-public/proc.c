@@ -398,6 +398,23 @@ getProcInfo(int pid, struct processInfo* pinfo){
   
   return -1;
 }
+
+int
+setprio(int prio){
+	
+	struct proc *curproc = myproc();
+	curproc->prio = prio;
+	
+	return 0;
+}
+
+int
+getprio(void){
+	
+	struct proc *curproc = myproc();
+	
+	return curproc->prio;
+}
 /////////////////myedit
 
 //PAGEBREAK: 42

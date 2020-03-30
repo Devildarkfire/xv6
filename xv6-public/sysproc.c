@@ -52,6 +52,23 @@ sys_getProcInfo(void)
   
   return getProcInfo(pid, pinfo);
 }
+
+int
+sys_setprio(void){
+	
+  int prio = 0;
+  if(argint(0, &prio) < 0){
+	  return -1;
+  }
+  
+  return setprio(prio);
+}
+
+int
+sys_getprio(void){
+	
+  return getprio();
+}
 /////////////////myedit
 
 int

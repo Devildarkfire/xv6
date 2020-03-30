@@ -34,3 +34,5 @@ SYSCALL(helloYou) /////////////////myedit
 SYSCALL(getNumProc) /////////////////myedit
 SYSCALL(getMaxPid) /////////////////myedit
 SYSCALL(getProcInfo) /////////////////myedit
+SYSCALL(setprio) /////////////////myedit
+SYSCALL(getprio) /////////////////myedit

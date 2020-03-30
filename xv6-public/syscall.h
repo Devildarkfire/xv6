@@ -25,3 +25,6 @@
 #define SYS_getNumProc  24 /////////////////myedit
 #define SYS_getMaxPid  25 /////////////////myedit
 #define SYS_getProcInfo  26 /////////////////myedit
+#define SYS_setprio  27 /////////////////myedit
+#define SYS_getprio  28 /////////////////myedit
+
