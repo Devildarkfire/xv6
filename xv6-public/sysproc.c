@@ -16,14 +16,8 @@ sys_hello(void)
 
 int
 sys_helloYou(void)
-{
-  char *name;
-
-  if(argstr(0, &name) < 0){  
-    return -1;
-  }
-	
-  return helloYou(name);
+{	
+  return helloYou();
 }
 
 int
