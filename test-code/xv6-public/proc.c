@@ -322,7 +322,7 @@ wait(void)
 int
 hello(void)
 {
-  cprintf("hello\n");
+  cprintf("Hello\n");
   
   return 0;
 }
@@ -331,6 +331,7 @@ int
 helloYou(char *input)
 {
   cprintf(input);
+  cprintf("\n");
   
   return 0;
 }

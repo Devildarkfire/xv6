@@ -14,7 +14,7 @@ This script installs the original xv6 code, patches it, copies your solution, th
 
 Next, run the following script to compare your output with the expected output.
 
-./autograder.sh expected_output <your-output-folder>
+./autograder.sh expected_output myoutput
 
 Caveat: Testcase 3 prints the number of context switches and this number will differ slightly across execution runs. So it is alright if your answers do not exactly match the expected output.
 
