@@ -115,6 +115,10 @@ found:
   memset(p->context, 0, sizeof *p->context);
   p->context->eip = (uint)forkret;
 
+  //////////////////////////myedit
+  p->ticket = 1;
+  //////////////////////////myedit
+  
   return p;
 }
 
@@ -432,7 +436,12 @@ scheduler(void)
   struct cpu *c = mycpu();
   c->proc = 0;
   
+  int has_ticket;////////////////////////////////////////////////////////////myedit
+  
   for(;;){
+	  
+	has_ticket = 0;
+	
     // Enable interrupts on this processor.
     sti();
 
@@ -445,6 +454,17 @@ scheduler(void)
       // Switch to chosen process.  It is the process's job
       // to release ptable.lock and then reacquire it
       // before jumping back to us.
+	  
+	  ////////////////////////////////////////////////////////////myedit
+	  if(p->ticket == 0){
+		  continue;
+	  }
+	  
+	  has_ticket = 1;
+	  
+	  p->ticket--;
+	  ////////////////////////////////////////////////////////////myedit
+	  
       c->proc = p;
       switchuvm(p);
       p->state = RUNNING;
@@ -456,9 +476,19 @@ scheduler(void)
       // It should have changed its p->state before coming back.
       c->proc = 0;
     }
+	
+	////////////////////////////////////////////////////////////myedit
+	if(!has_ticket){ /////////////replenish tickets if all runnable processes have no tickets.
+		for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+			p->ticket = p->prio + 1;
+		}
+	}
+    ////////////////////////////////////////////////////////////myedit
+	
     release(&ptable.lock);
-
-  }
+	
+  }  
+  
 }
 
 // Enter scheduler.  Must hold only ptable.lock

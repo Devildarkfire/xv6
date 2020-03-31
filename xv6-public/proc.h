@@ -52,6 +52,7 @@ struct proc {
   
   int numberContextSwitches; /////////////////////myedit
   int prio; /////////////////////myedit
+  int ticket; /////////////////////myedit
 };
 
 // Process memory is laid out contiguously, low addresses first:
