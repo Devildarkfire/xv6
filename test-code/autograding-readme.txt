@@ -16,6 +16,8 @@ Next, run the following script to compare your output with the expected output.
 
 ./autograder.sh expected_output myoutput
 
+diff -w -B expected_output/out6.txt myoutput/out6.txt
+
 Caveat: Testcase 3 prints the number of context switches and this number will differ slightly across execution runs. So it is alright if your answers do not exactly match the expected output.
 
 Caveat: Testcases 5 and 6 set priorities of processes, run some compute intensive task in the processes, and check their exit order. It is expected that higher priority processes will finish faster and hence exit earlier. However, you may not get the same desired exit order always due to some scheduler non-determinism.
