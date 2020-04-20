@@ -5,9 +5,11 @@ EXPECTED=expected_output
 #for ACTUAL in actual_output/*
 #ConnorMahlbacher/  FanruoGu/    kaichenzhang/    Oliver_Zhang/       WillElliott_has_all/  ziyue_zhou/ danielwhite/       Junda_An/    KaitlynHuynh/  Rui_Hou/  yangchenYeHw4/ ericnubbe/  JunzhaoSun/  Kevin_Rochford/  TimLesch_has_make/  YvonneSanchez/
 
-#done: ConnorMahlbacher YvonneSanchez
+#done: ConnorMahlbacher
 
 #changed: TimLesch_has_make
+
+#not compile at all: YvonneSanchez
 
 for ACTUAL in   FanruoGu    kaichenzhang    Oliver_Zhang       WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_no_make  
 do
