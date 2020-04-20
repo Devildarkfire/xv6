@@ -331,7 +331,7 @@ scheduler(void)
     // Enable interrupts on this processor.
     sti();
 
-    struct proc *highP = NULL;
+    struct proc *highP = 0;
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
     for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
