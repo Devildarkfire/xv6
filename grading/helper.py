@@ -13,13 +13,13 @@ def main():
     p.wait()
     p = subprocess.Popen(["make"], stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     p.wait()
-    p = subprocess.Popen(["make", "qemu"], stdout=subprocess.PIPE,universal_newlines=True, stderr=subprocess.STDOUT, preexec_fn=os.setsid)
+    p = subprocess.Popen(["make", "qemu-nox"], stdout=subprocess.PIPE,universal_newlines=True, stderr=subprocess.STDOUT, preexec_fn=os.setsid)
     curIndex = None
 
     # Iterate over outputs from running qemu process
     while p.poll() is None:
         output = p.stdout.readline()
-        #print(output) #uncomment for debug
+        print(output) #uncomment for debug
         line = output.split()
         if len(line) == 3 and line[0] == 'Testcase':
             if line[2] == 'Start':
