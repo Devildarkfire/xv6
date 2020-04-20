@@ -10,7 +10,7 @@ for i in ConnorMahlbacher  #FanruoGu    kaichenzhang    Oliver_Zhang       WillE
 do		
 	echo ----$i-----------------------------------------------------------
 	
-	rm -f xv6-public
+	rm -rf xv6-public
 	cp -r xv6-public-org/ xv6-public/
 	
 	cp student_modified_files/$i/* xv6-public/ ####there could be a problem if students include their makefiles which do not make the testcases 
