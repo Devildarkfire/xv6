@@ -103,13 +103,13 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
-extern int hello(void);
-extern int helloYou(void);
-extern int getNumProc(void);
-extern int getMaxPid(void);
-extern int getProcInfo(void);
-extern int setprio(void);
-extern int getprio(void);
+extern int sys_hello(void);
+extern int sys_helloYou(void);
+extern int sys_getNumProc(void);
+extern int sys_getMaxPid(void);
+extern int sys_getProcInfo(void);
+extern int sys_setprio(void);
+extern int sys_getprio(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,

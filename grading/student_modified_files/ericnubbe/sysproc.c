@@ -108,15 +108,13 @@ sys_helloYou(char* s)
 int
 sys_getNumProc(void)
 {
-return 0;
-  //return getNumProc();
+  return getNumProc();
 }
 
 int
 sys_getMaxPid(void)
 {
-return 0;
-  //return getMaxPid();
+	return getMaxPid();
 }
 
 int
@@ -128,8 +126,7 @@ sys_getProcInfo(void)
   argint(0, &pid);
   argptr(1, (void*) &pi, sizeof(pi));
   
-return 0;
-  //return getProcInfo(pid, pi);
+return getProcInfo(pid, pi);
 }
 
 int
@@ -138,14 +135,11 @@ sys_setprio(void)
   int prio;
   argint(0, &prio);
   
-return 0;
-  //return setprio(prio);
+return setprio(prio);
 }
 
 int
 sys_getprio(void)
 {
-	
-return 0;
-  //return getprio();
+return getprio();
 }

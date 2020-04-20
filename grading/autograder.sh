@@ -9,9 +9,9 @@ EXPECTED=expected_output
 
 #changed: TimLesch_has_make
 
-#not compile at all: YvonneSanchez
+#not compile at all: YvonneSanchez kaichenzhang
 
-for ACTUAL in   FanruoGu    kaichenzhang    Oliver_Zhang       WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_no_make  
+for ACTUAL in  FanruoGu    Oliver_Zhang       WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 JunzhaoSun  Kevin_Rochford  TimLesch_no_make  ericnubbe
 do
 
 correct=0
