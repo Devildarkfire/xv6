@@ -27,7 +27,7 @@ int sleep(int);
 int uptime(void);
 int hello(void);
 int helloYou(char*);
-int getNumproc(void);
+int getNumProc(void);
 int getMaxPid(void);
 int getProcInfo(int,struct processInfo*);
 int setprio(int);

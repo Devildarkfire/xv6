@@ -19,7 +19,7 @@ int sys_helloYou(char* n){
   return 0;
 }
 
-int sys_getNumproc(void){
+int sys_getNumProc(void){
   return get_numproc();
 }
 

@@ -105,7 +105,7 @@ extern int sys_write(void);
 extern int sys_uptime(void);
 extern int hello(void);
 extern int helloYou(void);
-extern int getNumproc(void);
+extern int getNumProc(void);
 extern int getMaxPid(void);
 extern int getProcInfo(void);
 extern int setprio(void);
@@ -135,7 +135,7 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_hello]   sys_hello,
 [SYS_helloYou]   sys_helloYou,
-[SYS_getNumproc]   sys_getNumproc,
+[SYS_getNumProc]   sys_getNumProc,
 [SYS_getMaxPid]   sys_getMaxPid,
 [SYS_getProcInfo]   sys_getProcInfo,
 [SYS_setprio]   sys_setprio,
