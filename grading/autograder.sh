@@ -16,7 +16,7 @@ for expected in $EXPECTED/*; do
     actual=actual_output/$ACTUAL/$name
     total=$((total+1))
     echo "Comparing $expected and $actual"
-    diff -w -B $expected $actual
+    diff -w -B $expected $actual	
 		if [ "$?" == "0" ]; then
 			echo "Test Case Passed"
 			correct=$((correct+1))
