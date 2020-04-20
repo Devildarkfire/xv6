@@ -24,11 +24,11 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int hello(void);
-int helloYou(name);
+int helloYou(char*);
 int getNumProc(void);
 int getMaxPid(void);
-int getProcInfo(pid, &processInfo);
-int setprio(n);
+int getProcInfo(int, &processInfo);
+int setprio(int);
 int getprio(void);
 
 // ulib.c
