@@ -1,17 +1,19 @@
 #!/bin/bash
-if [ "$#" -ne 2 ]; then 
-    echo "Usage: ./autograder.sh expected_output your_output"
-    exit
-fi
-echo "Expected output: $1"
-echo "Your actual output: $2"
-EXPECTED=$1
-ACTUAL=$2
+
+EXPECTED=expected_output
+
+#for ACTUAL in actual_output/*
+#ConnorMahlbacher/  FanruoGu/    kaichenzhang/    Oliver_Zhang/       WillElliott_has_all/  ziyue_zhou/ danielwhite/       Junda_An/    KaitlynHuynh/  Rui_Hou/  yangchenYeHw4/ ericnubbe/  JunzhaoSun/  Kevin_Rochford/  TimLesch_has_make/  YvonneSanchez/
+
+for ACTUAL in ConnorMahlbacher  #FanruoGu    kaichenzhang    Oliver_Zhang       WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_has_make  YvonneSanchez
+do
+
 correct=0
 total=0
+
 for expected in $EXPECTED/*; do
     name=`basename $expected`
-    actual=$ACTUAL/$name
+    actual=actual_output/$ACTUAL/$name
     total=$((total+1))
     echo "Comparing $expected and $actual"
     diff -w -B $expected $actual
@@ -25,3 +27,7 @@ for expected in $EXPECTED/*; do
 done
 echo "Test Cases Passed: $correct"
 echo "Test Cases Total: $total"
+
+
+done
+
