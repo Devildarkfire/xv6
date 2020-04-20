@@ -181,14 +181,13 @@ UPROGS=\
 	_usertests\
 	_wc\
 	_zombie\
-	_testcase\
-	_hellotest\
-	_helloYoutest\
-	_getNumProctest\
-	_getMaxPidtest\
-	_getProcInfotest\
-	_priotest\
-	_procdumptest\
+	_testcase0\
+	_testcase1\
+	_testcase2\
+	_testcase3\
+	_testcase4\
+	_testcase5\
+	_testcase6\
 
 
 fs.img: mkfs README $(UPROGS)
@@ -259,9 +258,7 @@ qemu-nox-gdb: fs.img xv6.img .gdbinit
 EXTRA=\
 	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
 	ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c zombie.c\
-	printf.c umalloc.c _testcase.c _hellotest.c _helloYoutest.c\
-	_getNumProctest.c _getMaxPidtest.c _getProcInfotest.c\
-       	_priotest.c _procdumptest.c\
+	printf.c umalloc.c testcase0.c testcase1.c testcase2.c testcase3.c testcase4.c testcase5.c testcase6.c\
 	README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
 	.gdbinit.tmpl gdbutil\
 

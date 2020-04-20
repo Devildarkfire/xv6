@@ -7,11 +7,11 @@
 
 #done: ConnorMahlbacher FanruoGu    kaichenzhang    Oliver_Zhang ziyue_zhou Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 JunzhaoSun  Kevin_Rochford danielwhite ericnubbe TimLesch_no_make
 
-#pending: WillElliott_has_all 
-
 #changed: TimLesch_has_make
 
-for i in YvonneSanchez
+#not compile at all: YvonneSanchez
+
+for i in WillElliott_has_all
 
 do		
 	echo ----$i-----------------------------------------------------------
@@ -20,7 +20,7 @@ do
 	cp -r xv6-public-org/ xv6-public/
 	
 	cp student_modified_files/$i/* xv6-public/ ####there could be a problem if students include their makefiles which do not make the testcases 
-#cp student_modified_files/YvonneSanchez/* xv6-public/
+#cp student_modified_files/WillElliott_has_all/* xv6-public/
 	
 	python3 helper.py
 

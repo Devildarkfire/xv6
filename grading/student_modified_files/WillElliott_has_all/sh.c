@@ -155,6 +155,21 @@ main(void)
     }
   }
 
+  // Testing 
+  for(int i=0; i<7; i++){
+    char testcase[20];
+    strcpy(testcase, "testcase0 5\0");
+    testcase[8] = (char)(i + '0');
+    
+    printf(1, "Testcase %d Start\n", i);
+    if (fork1() == 0){
+      runcmd(parsecmd(testcase));
+    }
+    wait();
+    printf(1, "Testcase %d End\n", i);
+  }
+  printf(1, "DONE\n");
+
   // Read and run input commands.
   while(getcmd(buf, sizeof(buf)) >= 0){
     if(buf[0] == 'c' && buf[1] == 'd' && buf[2] == ' '){

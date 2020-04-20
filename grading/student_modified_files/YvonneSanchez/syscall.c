@@ -104,11 +104,11 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_hello(void);
-extern int sys_helloYou(char*);
+extern int sys_helloYou(void);
 extern int sys_getNumProc(void);
 extern int sys_getMaxPid(void);
-extern int sys_getProcInfo(int, struct processInfo*);
-extern int sys_setprio(int);
+extern int sys_getProcInfo(void);
+extern int sys_setprio(void);
 extern int sys_getprio(void);
 
 
