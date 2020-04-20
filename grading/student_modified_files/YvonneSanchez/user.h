@@ -27,7 +27,7 @@ int hello(void);
 int helloYou(char*);
 int getNumProc(void);
 int getMaxPid(void);
-int getProcInfo(int, &processInfo);
+int getProcInfo(int, struct processInfo*);
 int setprio(int);
 int getprio(void);
 

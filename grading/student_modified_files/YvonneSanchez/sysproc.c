@@ -134,7 +134,7 @@ getMaxPid(void){
 }
 
 int 
-getProcInfo(int pid, &processInfo){
+getProcInfo(int pid, struct processInfo* pinfo){
   struct proc *p;
   int pidMatch;
 
