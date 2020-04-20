@@ -13,7 +13,10 @@ int sys_hello(void){
   return 0;
 }
 
-int sys_helloYou(char* n){
+int sys_helloYou(void){
+	
+  char* n;
+  
   argstr(0,&n);
   cprintf("%s\n",n);
   return 0;
