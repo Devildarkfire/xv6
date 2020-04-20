@@ -5,11 +5,11 @@
 #for i in $(ls -d */)
 #ConnorMahlbacher/  FanruoGu/    kaichenzhang/    Oliver_Zhang/       WillElliott_has_all/  ziyue_zhou/ danielwhite/       Junda_An/    KaitlynHuynh/  Rui_Hou/  yangchenYeHw4/ ericnubbe/  JunzhaoSun/  Kevin_Rochford/  TimLesch_has_make/  YvonneSanchez/
 
-#done: ConnorMahlbacher FanruoGu    kaichenzhang    Oliver_Zhang ziyue_zhou Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 JunzhaoSun  Kevin_Rochford
+#done: ConnorMahlbacher FanruoGu    kaichenzhang    Oliver_Zhang ziyue_zhou Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 JunzhaoSun  Kevin_Rochford danielwhite
 
 #pending: WillElliott_has_all
 
-for i in   danielwhite   #ericnubbe    TimLesch_has_make  YvonneSanchez
+for i in  ericnubbe    #TimLesch_has_make  YvonneSanchez
 
 do		
 	echo ----$i-----------------------------------------------------------
@@ -18,7 +18,7 @@ do
 	cp -r xv6-public-org/ xv6-public/
 	
 	cp student_modified_files/$i/* xv6-public/ ####there could be a problem if students include their makefiles which do not make the testcases 
-#cp student_modified_files/danielwhite/* xv6-public/
+#cp student_modified_files/ericnubbe/* xv6-public/
 	
 	python3 helper.py
 
