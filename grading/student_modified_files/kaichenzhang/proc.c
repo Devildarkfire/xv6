@@ -575,7 +575,7 @@ int get_procinfo(int pid, struct processInfo* pInfo){
   }
   pInfo->pid=pid;
   pInfo->psize=p->sz;
-  pInfo->numberContextSwitches=p->numOfswtch;
+  pInfo->numberContextSwitches=p->number_ContextSwitches;
 
   return 0;
 }
