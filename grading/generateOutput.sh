@@ -5,9 +5,9 @@
 #for i in $(ls -d */)
 #ConnorMahlbacher/  FanruoGu/    kaichenzhang/    Oliver_Zhang/       WillElliott_has_all/  ziyue_zhou/ danielwhite/       Junda_An/    KaitlynHuynh/  Rui_Hou/  yangchenYeHw4/ ericnubbe/  JunzhaoSun/  Kevin_Rochford/  TimLesch_has_make/  YvonneSanchez/
 
-#done: ConnorMahlbacher
+#done: ConnorMahlbacher FanruoGu    kaichenzhang    Oliver_Zhang
 
-for i in FanruoGu    kaichenzhang    Oliver_Zhang       WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_has_make  YvonneSanchez
+for i in WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_has_make  YvonneSanchez
 
 do		
 	echo ----$i-----------------------------------------------------------
