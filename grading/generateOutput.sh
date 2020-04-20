@@ -7,7 +7,9 @@
 
 #done: ConnorMahlbacher FanruoGu    kaichenzhang    Oliver_Zhang
 
-for i in WillElliott_has_all  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_has_make  YvonneSanchez
+#pending: WillElliott_has_all
+
+for i in  ziyue_zhou danielwhite  Junda_An    KaitlynHuynh  Rui_Hou  yangchenYeHw4 ericnubbe  JunzhaoSun  Kevin_Rochford  TimLesch_has_make  YvonneSanchez
 
 do		
 	echo ----$i-----------------------------------------------------------
