@@ -109,6 +109,7 @@ int sys_helloYou(void){
 // This method returns the number of processes in the process table.
 int sys_getNumProc(void){
   return getProcNum();
+}
 
 int sys_getMaxPid(void){
   return getProcMax();
